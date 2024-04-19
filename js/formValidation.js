@@ -7,19 +7,9 @@ export default function formValidation(e) {
   const telValid = phoneRegExp.test(inputTel.value);
   const emailValid = emailRegExp.test(inputEmail.value);
 
-  if (!telValid && !emailValid) {
-    addErrorMessage(inputTel, telErrorMessageText)
-    addErrorMessage(inputEmail, emailErrorMessageText)
-    return false;
-  }
-
-  if (!telValid) {
-    addErrorMessage(inputTel, telErrorMessageText)
-    return false
-  }
-
-  if (!emailValid) {
-    addErrorMessage(inputEmail, emailErrorMessageText)
+  if (!telValid || !emailValid) {
+    !telValid ? addErrorMessage(inputTel, telErrorMessageText) : null
+    !emailValid ? addErrorMessage(inputEmail, emailErrorMessageText) : null
     return false
   }
 
