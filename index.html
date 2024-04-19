@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test BGV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+
+    <div class="container">
+
+      <div class="content">
+
+        <div class="info">
+          <h1 class="info__title">онлайн заявка на співпрацю</h1>
+          <h2 class="info__sub-title">Вітаємо!<span>Дякуємо за цікавість до проєкту BGV Graphite.</span></h2>
+          <p class="info__text">Будь ласка, залиште ваші контакти та вкажіть тему вашого звернення, і наша команда
+            зв’яжеться з
+            вами
+            найближчим часом.</p>
+        </div>
+
+        <form class="form">
+          <input class="form__field" type="text" name="full-name" id="full-name" placeholder="Ваші ПІБ" required>
+
+          <input class="form__field" type="text" name="company" id="company"
+            placeholder="Яку компанію ви представляєте?">
+
+          <input class="form__field" type="text" name="position" id="position" placeholder="Яка Ваша посада?" required>
+
+          <div class="form__inner">
+            <p>Опишіть коротко питання, з яким ви бажаєте звернутися до команди нашого проєкту?</p>
+            <textarea class="form__field form__field--bordered" name="questions" id="questions" cols="30"
+              rows="8"></textarea>
+          </div>
+
+          <p>Вкажіть контакти, за якими ми можемо зв’язатися з вами:</p>
+
+          <input class="form__field" type="tel" name="tel" id="tel" placeholder="Номер мобільного" required>
+
+          <input class="form__field" type="email" name="email" id="email" placeholder="Електронна пошта" required>
+          <p class="thank-message"></p>
+          <button class="form__button" type="submit">Відправити</button>
+        </form>
+
+        <h2 class="message">Дякуємо за приділену увагу!</h2>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script src="./script.js" type="module"></script>
+</body>
+
+</html>
